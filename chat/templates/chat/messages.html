@@ -1,0 +1,29 @@
+{% extends 'chat/chat.html' %}
+{% block hide %}{% endblock %}
+{% block messages %}
+    {% for message in messages %}
+
+    {% if message.sender == request.user %}
+    <div class="row justify-content-end m-0">
+<div class="card-panel right  blue lighten-5  p-3 m-0 mb-2" style="padding-left:15px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; max-width: 70%; width: auto; ">
+    {{ message }}
+</div></div>
+<!-- <div style=" top: 0; left:3px; border-radius: 10px; font-weight: bolder; display: inline-block;" class="title">You</div> -->
+    {% else %}
+    <div style="position: absolute; top: 0; left:0; font-weight: bolder; padding-left:35px; background-color:gray; color:white; border-start-start-radius: 25px; border-start-end-radius: 25px; width:100% " class="h3 p-2">&nbsp {{ message.sender }}</div>
+    <div class="row">
+    <div class="card-panel left p-3 m-0 mb-2 " style="padding-right:15px; border-top-right-radius: 10px; border-bottom-left-radius: 10px;  max-width: 70%; width: auto;">
+    <!-- <div style=" top: 0; left:0; font-weight: bolder; border-radius: 15px; padding-right:35px " class="title">{{ message.sender }}</div> -->
+    {{ message }}
+</div> 
+</div>
+    {% endif %}
+    {% endfor %}
+<script>
+$(function () {
+    $('#user{{ receiver.id }}').addClass('active');
+    //Call receive function each 1 seconds to check for new messages in the database
+    setInterval(receive,1000)
+})
+</script>
+{% endblock %}
