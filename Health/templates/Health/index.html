@@ -1,0 +1,440 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MediTech 2.0</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% comment %} <link href="{% static 'health/img/favicon.png' %}"rel="icon"> {% endcomment %}
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS Files -->
+  <link href="{% static 'health/css/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'health/css/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'health/css/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'health/css/font-awesome.min.css' %}">
+  <link href="{% static 'health/css/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'health/css/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'health/css/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'health/css/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'health/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/">MediTech 2.0</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#getstarted">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= home Section ======= -->
+  <section id="home" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="20">
+          <h1>Brings Health Care to Your Finger-Tip </h1>
+          <h2>Healthcare services and information are easily accessible through digital means, such as Health Reports or Telemedicine, at the convenience of one's fingertips.</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#getstarted" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="20">
+          <img src="{% static 'health/img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End home -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="getstarted" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Get Started</h2>
+          <p>Welcome to 'MediTech 2.0'! Our web application provides easy access to healthcare services and information through the convenience of digital means. Our platform offers telemedicine consultations, medical advice, online health records, appointment scheduling, and more. To get started, simply create an account, fill in your personal details, and begin exploring our features. We aim to provide efficient, accessible, and personalized healthcare to you, right at your fingertips!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-person-add"></i></div>
+              <h4><a href="/patient/patient_register">Patient Register</a></h4>
+              <p>Join us to access digital healthcare services, including medical advice, online health records and more.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="30">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-person-check"></i></div>
+              <h4><a href="/patient/patient_login">Patient Login</a></h4>
+              <p>Access your digital healthcare services on MediTech 2.0 by logging in as a patient.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="40">
+            <div class="icon-box">
+              <div class="icon"><i class="fa fa-user-md"></i></div>
+              <h4><a href="/doctor/doctor_login">Doctor Login</a></h4>
+              <p>Manage patient health records and appointments by logging in as a doctor on MediTech 2.0.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="50">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-person-gear"></i></div>
+              <h4><a href="/roleadmin/roleadmin_login">Admin Login</a></h4>
+              <p>Easily manage the MediTech 2.0 healthcare platform by logging in as an admin.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              MediTech 2.0 is a digital healthcare platform that provides easy access to healthcare services and information through the convenience of digital means. Our platform aims to enhance accessibility, efficiency, and personalized care for patients and healthcare providers alike. Some key points about us are:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Easy access to digital healthcare services</li>
+              <li><i class="ri-check-double-line"></i> User-friendly platform with telemedicine consultations, medical advice, online health records, appointment scheduling, and more</li>
+              <li><i class="ri-check-double-line"></i> Prioritization of patient privacy and confidentiality</li>
+              <li><i class="ri-check-double-line"></i>Commitment to improving healthcare outcomes and increasing access to healthcare services</li>
+              <li><i class="ri-check-double-line"></i>Ongoing research and development to stay at the forefront of digital healthcare innovation.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              MediTech 2.0: Revolutionizing the digital healthcare landscape with AI and machine learning. 
+              Our user-friendly platform offers patients and healthcare providers advanced features, 
+              Patients can store and access their medical records securely on our platform, and our AI and machine learning technologies, 
+              including convolutional neural networks (CNNs), enable us to analyze and interpret patient data to provide customized health advice and 
+              treatment plans. Join us in our mission to improve healthcare outcomes for all.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="services" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Choose MediTech 2.0 for <strong>Experience advanced and personalized digital healthcare</strong></h3>
+              <p>
+                With our advanced technology, user-friendly interface, comprehensive solution, dedicated team, and focus on improved healthcare outcomes, MediTech 2.0 is the top choice for digital healthcare.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Advanced AI and Machine Learning <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                       Our platform leverages the latest in AI and machine learning technology to provide patients with personalized health advice and treatment plans.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Comprehensive Solution <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                       Our platform offers a range of features, including patient-doctor chat, secure medical record storage, prescription management, and appointment scheduling, all in one convenient location.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dedicated Team of Experts<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                       Our team is comprised of experienced healthcare professionals and technology experts who are dedicated to improving healthcare outcomes for all.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span>Improved Healthcare Outcomes<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                       Our platform is designed to help patients achieve better health outcomes through personalized treatment plans and advanced healthcare management tools.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("{% static 'health/img/why-us.png' %}");' data-aos="zoom-in" data-aos-delay="30">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+   
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>The MediTech 2.0 FAQ section is a valuable resource that provides comprehensive and easily accessible answers to frequently asked questions about our platform, its features and benefits. Whether you're a patient, doctor, or administrator, our FAQ can help you get the information you need quickly and efficiently.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="10">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How do I sign up for MediTech 2.0?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Simply visit our website and follow the registration process to sign up for MediTech 2.0.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="20">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed"> Is my personal health information secure on MediTech 2.0? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                   Yes, we utilize advanced security measures to ensure your personal health information is protected and secure.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="30">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Can I chat with my healthcare provider through MediTech 2.0? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, our platform offers a patient-doctor chat system for easy communication with your healthcare provider.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="40">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How does MediTech 2.0 use AI and machine learning technology to improve healthcare outcomes? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Our platform utilizes AI and machine learning to analyze patient data and provide personalized treatment plans, as well as to identify patterns and trends that can inform healthcare research and policy.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="45">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is MediTech 2.0 compatible with other healthcare systems and technologies? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, our platform is designed to be interoperable with other healthcare systems and technologies, allowing for seamless integration and management of your healthcare information.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact us to learn more about MediTech 2.0's services, to get answers to any questions you may have, or to provide feedback that will help us improve our platform. Our friendly and knowledgeable support team is available to assist you with any inquiries you may have.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Sagar Group of Institutions-SISTec, opposite International Airport, Gandhi Nagar, Bhopal, Madhya Pradesh 462036</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Website:</h4>
+                <p>sistec.ac.in</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>09109975760</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.326167590237!2d77.33789171533932!3d23.303921811601025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c6650df25ad15%3A0x50c6581fbb7c9940!2sSagar%20Group%20of%20Institutions%20-%20SISTec!5e0!3m2!1sen!2sin!4v1680438117269!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MediTech 2.0</h3>
+            <p>
+              Sagar Group of Institutions-SISTec, </br>
+               opposite International Airport,  </br>
+               Gandhi Nagar, Bhopal,  </br>
+               Madhya Pradesh 462036  </br> </br>
+              <strong>Phone:</strong> 09109975760<br>
+              <strong>Website:</strong> sistec.ac.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#services">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i><a href="#contact">Contact</a></li>
+          <li><i class="bx bx-chevron-right"></i><a href="#getstarted">Get Started</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Record Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Report Check</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Appointments</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Prescription</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MediTech 2.0</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Bootstrap JS Files -->
+  <script src="{% static 'health/css/aos/aos.js' %}"></script>
+  <script src="{% static 'health/css/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'health/css/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'health/css/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'health/css/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'health/css/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'health/css/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'health/js/main.js' %}"></script>
+
+</body>
+
+</html>
